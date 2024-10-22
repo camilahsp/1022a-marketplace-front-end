@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import './App2.css'
 type UserType = {
     id:string,
-  nome:string,
-  email:string,
-  created_at:string,
-  updated_at:string,
+    nome:string,
+    email:string,
+    created_at:string,
+    updated_at:string,
 
 }
 
@@ -16,7 +16,7 @@ function App2() {
   useEffect(()=>{
     setNome("Guilherme Terenciani")
     // buscar os dados do backEnd
-    fetch("https://one022a-marketplace2.onrender.com/produtos")
+    fetch("https://one022a-marketplace2.onrender.com/usuarios")
     .then(resposta=>resposta.json())
     .then(dados=>setUsuarios(dados))
     // colocar em uma variável
